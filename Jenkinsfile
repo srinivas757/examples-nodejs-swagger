@@ -3,13 +3,13 @@ pipeline {
   stages{
     stage("build"){
       steps{
-        sh "echo hello world from build"
+        sh "npm install"
       }
     }
 
     stage("Deploy"){
       steps{
-        sh "echo hello world from Deploy"
+        sh "npm run start:dev"
       }
     }
   }
