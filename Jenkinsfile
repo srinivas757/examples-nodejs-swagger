@@ -10,7 +10,7 @@ pipeline {
     stage("Deploy"){
       steps{
         sh "sudo pm2 delete"
-        sh "sudo pm2 start /bin/"
+        sh "sudo pm2 start /bin/www"
       }
     }
   }
